@@ -7,6 +7,7 @@
         <h1 class="text-3xl text-center font-bold">Login</h1>
 
         <form class="mt-4" method="POST" action="">
+            @csrf
             <input class="border boder-gray-200 rounded-md bg-gray-200 w-full text-lg placeholder-gray-500 p-2 my-2 focus:bg-white" type="email" placeholder="Email" id="email" name="email">
 
             <input class="border boder-gray-200 rounded-md bg-gray-200 w-full text-lg placeholder-gray-500 p-2 my-2 focus:bg-white" type="password" placeholder="Password" id="password" name="password">
