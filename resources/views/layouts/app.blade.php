@@ -18,13 +18,22 @@
 <body class="bg-gray-100 text-gray-800">
     <nav class="flex py-5 bg-indigo-500 text-white">
         <div class="w-1/2 px-12 mr-auto">
-            <h2 class="text-2xl font-bold">Register Login System</h2>
+            <a href="{{ route('home.index') }}">
+                <h2 class="text-2xl font-bold">
+                    Register Login System
+                </h2>
+            </a>
         </div>
 
         <ul class="w-1/2 px-16 ml-auto flex justify-end pt-1">
-            <li></li>
-                <a href="{{ route('register.index') }}">Register</a>
-                <a href="{{ route('login.index') }}">Log In</a>
+            <li class="mx-6">
+                <a href="{{ route('register.index') }}"
+                    class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md">Register</a>
+            </li>
+            <li>
+                <a href="{{ route('login.index') }}"
+                    class="font-semibold border-2 boder-white hover:text-indigo-700 hover:bg-white py-2 px-4 rounded-md">Log
+                    In</a>
             </li>
         </ul>
     </nav>

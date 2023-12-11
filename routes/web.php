@@ -18,7 +18,7 @@ use App\Http\Controllers\SessionController;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('home.index');
 
 Route::get('/register', [RegisterController::class, 'create'])->name('register.index');
 Route::get('/login', [SessionController::class, 'create'])->name('login.index');
