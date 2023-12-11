@@ -13,10 +13,10 @@
             <input class="border boder-gray-200 rounded-md bg-gray-200 w-full text-lg placeholder-gray-500 p-2 my-2 focus:bg-white" type="password" placeholder="Password" id="password" name="password">
             
             @error('message')
-                <p class="border border_red-500 rounded-md bg-red-100 w-full text-red-600 p-2 my-2">* Error</p>
+                <p class="border border_red-500 rounded-md bg-red-100 w-full text-red-600 p-2 my-2">{{ $message }}</p>
             @enderror
 
-            <button class="rounded-md bg-indigo-500 w-full text-lg text-white font-semibold p-2 my-3 hover:bg-indigo-600" type="submit">
+            <button class="rounded-md bg-sky-500 w-full text-lg text-white font-semibold p-2 my-3 hover:bg-sky-600" type="submit">
                 Send
             </button>
         </form>
