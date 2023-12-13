@@ -28,4 +28,4 @@ Route::get('/login', [SessionController::class, 'create'])->middleware('guest')-
 Route::post('/login', [SessionController::class, 'store'])->name('login.store');
 Route::get('/logout', [SessionController::class, 'destroy'])->middleware('auth')->name('login.destroy');
 
-Route::get('/admin');
+Route::get('/admin', [AdminController::class, 'index'])->middleware('auth.admin')->name('admin.index');
