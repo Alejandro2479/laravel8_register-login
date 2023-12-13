@@ -17,7 +17,10 @@ class AdminAuth
     {
         if(auth()->check())
         {
-            return $next($request);
+            if(auth()->user()->role === 'admin')
+            {
+                return $next($request);
+            }
         }
         
         return redirect()->to('/');
